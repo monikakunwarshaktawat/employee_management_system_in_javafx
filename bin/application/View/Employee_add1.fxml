@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="employeePane" prefHeight="641.0" prefWidth="426.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.EmployeeAdd1Controller">
+   <children>
+      <Label layoutX="53.0" layoutY="50.0" prefHeight="91.0" prefWidth="274.0" text="Employee Add-Form">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nameField" alignment="CENTER" layoutX="5.0" layoutY="198.0" prefHeight="48.0" prefWidth="412.0" promptText="Enter the  Employee name here..." style="-fx-border-radius: 15; -fx-border-color: black;" />
+      <Label layoutX="14.0" layoutY="160.0" prefHeight="21.0" prefWidth="99.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="275.0" prefHeight="21.0" prefWidth="99.0" text="Email:-">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="emailField" alignment="CENTER" layoutX="5.0" layoutY="321.0" prefHeight="48.0" prefWidth="412.0" promptText="Enter the  Employee email here..." style="-fx-border-radius: 15; -fx-border-color: black;" />
+      <Label layoutX="20.0" layoutY="420.0" prefHeight="21.0" prefWidth="99.0" text="Position">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="positionField" alignment="CENTER" layoutX="14.0" layoutY="459.0" prefHeight="48.0" prefWidth="412.0" promptText="Enter the  Employee position here..." style="-fx-border-radius: 15; -fx-border-color: black;" />
+      <JFXButton fx:id="addButton" layoutX="158.0" layoutY="584.0" onAction="#addAction" style="-fx-background-color: #45CE30; -fx-background-radius: 10;" text="ADD" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

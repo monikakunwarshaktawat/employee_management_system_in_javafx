@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="836.0" prefWidth="1107.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.EmployeeController">
+   <children>
+      <Label layoutX="134.0" layoutY="48.0" prefHeight="91.0" prefWidth="325.0" text="Employee List">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="employeePane" layoutX="667.0" layoutY="82.0" prefHeight="641.0" prefWidth="426.0" style="-fx-background-color: white;" />
+      <Pagination fx:id="pagination" layoutX="-10.0" layoutY="122.0" prefHeight="689.0" prefWidth="690.0" />
+      <TableView fx:id="table" editable="true" layoutX="6.0" layoutY="139.0" prefHeight="611.0" prefWidth="658.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="52.0" text="E_id" />
+          <TableColumn fx:id="name" prefWidth="116.0" text="Name" />
+            <TableColumn fx:id="email" prefWidth="128.0" text="Email" />
+            <TableColumn fx:id="position" prefWidth="138.0" text="Position" />
+            <TableColumn fx:id="action" prefWidth="219.0" text="Action">
+            <columns>
+                <TableColumn fx:id="edit" prefWidth="100" />
+                <TableColumn fx:id="delete" prefWidth="119" />
+            </columns>
+            </TableColumn>
+              </columns>
+      </TableView>
+   </children>
+</AnchorPane>
